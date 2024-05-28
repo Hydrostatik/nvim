@@ -31,3 +31,4 @@ Going with lazyvim because that's what the tutorial is recommending.
 'gd': go to definition
 '<leader>ca': Open up code actions
 '<leader>gf': format code in file
+'<leader>e': show error in a floating window
