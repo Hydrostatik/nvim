@@ -28,6 +28,17 @@ return {
         filetypes = { "haskell", "lhaskell", "cabal" },
       })
 
+      vim.diagnostic.config({
+        underline = true,
+        signs = true,
+        float = {
+          show_header = true,
+          source = "if_many",
+          border = "rounded",
+          focusable = false,
+        },
+      })
+
       vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
       vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
       vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, {})

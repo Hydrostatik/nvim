@@ -1,11 +1,12 @@
 return {
-  'nvim-treesitter/nvim-treesitter', build = ':TSUpdate',
+  "nvim-treesitter/nvim-treesitter",
+  build = ":TSUpdate",
   config = function()
-    local config = require('nvim-treesitter.configs')
+    local config = require("nvim-treesitter.configs")
     config.setup({
-      ensure_installed = { 'lua', 'haskell' },
+      ensure_installed = { "lua", "haskell", "clojure" },
       highlight = { enable = true },
       indent = { enable = true },
     })
-  end
+  end,
 }
