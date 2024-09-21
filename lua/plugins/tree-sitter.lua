@@ -4,7 +4,7 @@ return {
   config = function()
     local config = require("nvim-treesitter.configs")
     config.setup({
-      ensure_installed = { "lua", "haskell", "clojure" },
+      ensure_installed = { "lua", "haskell", "clojure", "html", "css" },
       highlight = { enable = true },
       indent = { enable = true },
     })
