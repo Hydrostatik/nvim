@@ -23,6 +23,17 @@ return {
 				capabilities = capabilities,
 			})
 
+			lspconfig.rust_analyzer.setup({
+				capabilities = capabilities,
+				settings = {
+					["rust-analyzer"] = {
+						checkOnSave = {
+							command = "clippy",
+						},
+					},
+				},
+			})
+
 			lspconfig.hls.setup({
 				capabilities = capabilities,
 				filetypes = { "haskell", "lhaskell", "cabal" },
